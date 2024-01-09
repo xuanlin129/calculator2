@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6  d-flex justify-content-center align-items-center">
+        <table id="table">
+          <tr>
+            <td colspan="4" id="text" class="tdc">0</td>
+          </tr>
+          <tr>
+            <td class="tdc bg-g">C</td>
+            <td class="tdc  bg-g">/</td>
+            <td class="tdc  bg-g">*</td>
+            <td class="tdc  bg-g">-</td>
+          </tr>
+          <tr>
+            <td class="tdc">7</td>
+            <td class="tdc">8</td>
+            <td class="tdc">9</td>
+            <td class="tdc  bg-g" rowspan="2">+</td>
+          </tr>
+          <tr>
+            <td class="tdc">4</td>
+            <td class="tdc">5</td>
+            <td class="tdc">6</td>
+          </tr>
+          <tr>
+            <td class="tdc">1</td>
+            <td class="tdc">2</td>
+            <td class="tdc">3</td>
+            <td class="tdc eval" rowspan="2">=</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="tdc">0</td>
+            <td class="tdc">.</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-12 col-lg-6  d-flex justify-content-center align-items-center">
+        <div>
+          <h3 class="text-center">History</h3>
+          <div style="overflow: auto;background: #fff; height: 90%;border-radius: 1rem">
+            <ul id="list">
+            </ul>
+          </div>
+          <button id="clearBtn" type="button" class="btn btn-light d-block mx-auto my-1">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="position-fixed bottom-0 bg-secondary w-100">
+    copyright by Xuan
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
