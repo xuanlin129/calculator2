@@ -1,0 +1,48 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  background: url("../src/bg_calculator.png") no-repeat fixed
+  font-family: 'Noto Sans KR', sans-serif
+  font-size: 24px
+
+.col-12
+  height: 100vh
+  &:last-child>div
+    width: 325px
+    height: 485px
+    background: #d9d9d9
+    border-radius: 1rem
+    padding: 1rem
+    padding-bottom: 4rem
+
+#table
+  background: #fff
+  border-collapse: separate
+  border-radius: 1rem
+  border-spacing: 5px
+  padding: 0.5rem
+  -webkit-user-drag: none
+  #text
+    text-align: right
+    padding: 0 1em
+  td
+    width: 75px
+    height: 75px
+    background: #f3f3f3
+    opacity: 0.8
+    border-radius: 5rem
+    text-align: center
+    user-select: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    &:not(#text)
+      cursor: pointer
+
+#list
+  list-style: none
+  padding: 0 1rem
+  li
+    border-bottom: 1px solid #999
