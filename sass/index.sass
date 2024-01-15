@@ -19,17 +19,22 @@ body
     padding-bottom: 4rem
 
 #table
+  width: 341px
   background: #fff
   border-collapse: separate
   border-radius: 1rem
   border-spacing: 5px
   padding: 0.5rem
   -webkit-user-drag: none
+  table-layout: fixed
   #text
     text-align: right
     padding: 0 1em
+    overflow-x: scroll
+    &::-webkit-scrollbar
+      height: 0
   td
-    width: 75px
+    // width: 75px
     height: 75px
     background: #f3f3f3
     opacity: 0.8

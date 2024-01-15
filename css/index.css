@@ -24,19 +24,24 @@ body {
 }
 
 #table {
+  width: 341px;
   background: #fff;
   border-collapse: separate;
   border-radius: 1rem;
   border-spacing: 5px;
   padding: 0.5rem;
   -webkit-user-drag: none;
+  table-layout: fixed;
 }
 #table #text {
   text-align: right;
   padding: 0 1em;
+  overflow-x: scroll;
+}
+#table #text::-webkit-scrollbar {
+  height: 0;
 }
 #table td {
-  width: 75px;
   height: 75px;
   background: #f3f3f3;
   opacity: 0.8;

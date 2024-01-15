@@ -10,7 +10,7 @@ for (const btn of btns) {
     const lastText = text.innerText[text.innerText.length - 1]
     // 如果按的鍵是 '='
     if (btnText === '=') {
-      if (!operators.includes(btnText)) {
+      if (!operators.includes(lastText)) {
         for (let i = 0; i < operators.length - 1; i++) {
           if (text.innerText !== '0' && text.innerText.includes(operators[i])) {
             list.insertAdjacentHTML('afterbegin',
