@@ -11,8 +11,8 @@ for (const btn of btns) {
     // 如果按的鍵是 '='
     if (btnText === '=') {
       if (!operators.includes(btnText)) {
-        for (const operator of operators) {
-          if (text.innerText !== '0' && text.innerText.includes(operator)) {
+        for (let i = 0; i < operators.length - 1; i++) {
+          if (text.innerText !== '0' && text.innerText.includes(operators[i])) {
             list.insertAdjacentHTML('afterbegin',
             `<li>${text.innerText} = ${eval(text.innerText)}</li>`
             )
@@ -51,8 +51,8 @@ document.addEventListener('keydown', event => {
   if (btnText === '=' || btnText === 'Enter') {
     // 如果最後一個字不是運算子，才計算
     if (!operators.includes(lastText)) {
-      for (const operator of operators) {
-        if (text.innerText !== '0' && text.innerText.includes(operator)) {
+      for (let i = 0; i < operators.length - 1; i++) {
+        if (text.innerText !== '0' && text.innerText.includes(operators[i])) {
           list.insertAdjacentHTML('afterbegin',
           `<li>${text.innerText} = ${eval(text.innerText)}</li>`
           )
